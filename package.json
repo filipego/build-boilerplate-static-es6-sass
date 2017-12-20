@@ -1,0 +1,56 @@
+{
+  "name": "build-boilerplate-static-es6-sass",
+  "version": "1.1.1",
+  "description": "Boilerplate for building a static app/website with ES6 and SASS",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "keywords": [
+    "build",
+    "boilerplate",
+    "sass",
+    "es6",
+    "es2015",
+    "static",
+    "transpilaton"
+  ],
+  "author": {
+    "name": "Filipe Valente",
+    "url": "filipevalentegomes.com"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "prebuild": "rm -rf build",
+    "build": "webpack -p",
+    "postbuild": "gulp images --compress"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.4.1",
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "css-loader": "^0.25.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "fs": "0.0.1-security",
+    "glob": "^7.0.6",
+    "gulp": "^3.9.1",
+    "gulp-if-else": "^1.0.3",
+    "gulp-imagemin": "^3.0.3",
+    "html-webpack-plugin": "^2.22.0",
+    "node-sass": "^3.9.0",
+    "postcss-loader": "^0.13.0",
+    "sass-loader": "^4.0.1",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.1",
+    "yargs": "^5.0.0"
+  }
+}
